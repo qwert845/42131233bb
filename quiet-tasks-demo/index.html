@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiet Tasks</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-label="Task dashboard">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Private demo</p>
+            <h1>Quiet Tasks</h1>
+          </div>
+          <button id="shuffleButton" class="icon-button" type="button" aria-label="Refresh tasks" title="Refresh tasks">
+            R
+          </button>
+        </div>
+
+        <div class="hero-grid">
+          <article class="focus-panel">
+            <div class="image-strip" role="img" aria-label="A calm illustrated work desk at dusk"></div>
+            <div class="focus-copy">
+              <p class="section-label">Today</p>
+              <h2 id="focusTitle">Ship a tiny working thing</h2>
+              <p id="focusText">
+                A compact private web page with real interactions, clean layout, and no setup friction.
+              </p>
+            </div>
+          </article>
+
+          <aside class="stats-panel" aria-label="Status summary">
+            <div>
+              <span class="metric" id="doneCount">3</span>
+              <span class="metric-label">done</span>
+            </div>
+            <div>
+              <span class="metric" id="focusMinutes">25</span>
+              <span class="metric-label">min focus</span>
+            </div>
+            <div>
+              <span class="metric" id="queueCount">5</span>
+              <span class="metric-label">queued</span>
+            </div>
+          </aside>
+        </div>
+
+        <section class="board" aria-label="Task list">
+          <div class="board-header">
+            <h2>Work Queue</h2>
+            <button id="addButton" type="button">Add task</button>
+          </div>
+          <ul id="taskList" class="task-list"></ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
