@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>강낭콩 키우기 - 미션</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="주간 미션">
+      <section class="screen screen-missions active">
+        <header class="page-head">
+          <button class="back" data-nav="home" aria-label="홈으로 이동">‹</button>
+          <div>
+            <h1>주간 미션</h1>
+            <p>미션을 완료하고 강낭콩을 더 크게 키워보세요!</p>
+          </div>
+          <img src="./assets/bean-stage1.gif" alt="" />
+        </header>
+        <div class="content">
+          <section class="weekly-progress">
+            <div class="row-between">
+              <strong>이번 주 진행도</strong>
+              <b>3 / 10 완료</b>
+            </div>
+            <div class="bar"><span style="width: 30%"></span></div>
+            <div class="milestones">
+              <span class="done">🌱<em>3개 완료</em></span>
+              <span>🪴<em>7개 완료</em></span>
+              <span>💎<em>10개 완료</em></span>
+            </div>
+          </section>
+          <div class="section-title">
+            <h2>주간 미션 목록</h2>
+            <span>카드를 길게 잡고 위아래로 드래그</span>
+          </div>
+          <div class="mission-list drag-list" id="missionDragList">
+            <article class="wide-quest draggable-card">
+              <span class="drag-handle">⋮⋮</span>
+              <span class="quest-icon green">🥤</span>
+              <div>
+                <h3>텀블러 사용하기</h3>
+                <p>텀블러를 사용한 인증 사진을 올려주세요</p>
+                <div class="bar"><span style="width: 100%"></span></div>
+              </div>
+              <strong>3 / 3</strong>
+              <button>받기</button>
+            </article>
+            <article class="wide-quest draggable-card">
+              <span class="drag-handle">⋮⋮</span>
+              <span class="quest-icon blue">♻</span>
+              <div>
+                <h3>분리수거 3회 하기</h3>
+                <p>분리수거한 사진을 3번 올려주세요</p>
+                <div class="bar"><span style="width: 66%"></span></div>
+              </div>
+              <strong>2 / 3</strong>
+              <button class="ghost">바로가기</button>
+            </article>
+            <article class="wide-quest draggable-card">
+              <span class="drag-handle">⋮⋮</span>
+              <span class="quest-icon yellow">🚿</span>
+              <div>
+                <h3>샤워 시간 5분 줄이기</h3>
+                <p>샤워 시간을 줄인 인증 사진을 올려주세요</p>
+                <div class="bar"><span style="width: 33%"></span></div>
+              </div>
+              <strong>1 / 3</strong>
+              <button class="ghost">바로가기</button>
+            </article>
+            <article class="wide-quest draggable-card">
+              <span class="drag-handle">⋮⋮</span>
+              <span class="quest-icon clay">🪴</span>
+              <div>
+                <h3>식물에 물 주기 2회</h3>
+                <p>식물에 물을 준 사진을 2번 올려주세요</p>
+                <div class="bar"><span style="width: 8%"></span></div>
+              </div>
+              <strong>0 / 2</strong>
+              <button class="ghost">바로가기</button>
+            </article>
+          </div>
+          <section class="bonus">
+            <img src="./assets/bean-stage1.gif" alt="" />
+            <p>모든 미션을 완료하면 특별 보상을 받을 수 있어요!</p>
+            <b>💎 x100</b>
+          </section>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="하단 메뉴">
+        <a href="./index.html"><span>🌱</span>홈</a>
+        <a class="active" href="./missions.html"><span>📋</span>미션</a>
+        <a href="./records.html"><span>📔</span>기록</a>
+        <a href="./collection.html"><span>🎁</span>컬렉션</a>
+      </nav>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

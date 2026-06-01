@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>강낭콩 키우기 - 설정</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="설정">
+      <section class="screen screen-settings active">
+        <header class="page-head">
+          <button class="back" data-nav="home" aria-label="홈으로 이동">‹</button>
+          <div>
+            <h1>설정</h1>
+            <p>앱 설정을 변경하고 다시 나은 습관을 만들어봐요!</p>
+          </div>
+          <img src="./assets/bean-stage2.gif" alt="" />
+        </header>
+        <div class="content">
+          <section class="settings-card">
+            <h2>언어 설정</h2>
+            <label class="select-row"><span>언어 변경</span><button id="languageBtn">한국어⌄</button></label>
+          </section>
+          <section class="settings-card">
+            <h2>사용자 설정</h2>
+            <label class="setting-row">
+              <span><b>배경 음악</b><em>앱 사용할 때 배경 음악이 재생됩니다.</em></span>
+              <input type="checkbox" checked />
+            </label>
+            <label class="setting-row">
+              <span><b>효과음</b><em>미션 완료, 성장 등 효과음을 재생합니다.</em></span>
+              <input type="checkbox" checked />
+            </label>
+            <label class="setting-row">
+              <span><b>알림 사운드</b><em>중요 알림을 사운드로 알려줍니다.</em></span>
+              <input type="checkbox" checked />
+            </label>
+            <div class="slider"><span style="width: 70%"></span></div>
+          </section>
+          <section class="settings-card">
+            <h2>계정 설정</h2>
+            <button class="account google">Google 계정 <b>연결 완료</b></button>
+            <button class="account apple">Apple 계정 <b>로그인하기</b></button>
+            <button class="account">이메일 주소 <b>›</b></button>
+          </section>
+          <section class="settings-card menu-list">
+            <button>사용 알림 설정 <b>›</b></button>
+            <button>사용 통계 관리 <b>›</b></button>
+            <button>이용 약관 <b>›</b></button>
+            <button>개인정보 처리방침 <b>›</b></button>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

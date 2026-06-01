@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>강낭콩 키우기 - 컬렉션</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="컬렉션">
+      <section class="screen screen-collection active">
+        <header class="page-head">
+          <button class="back" data-nav="home" aria-label="홈으로 이동">‹</button>
+          <div>
+            <h1>컬렉션</h1>
+            <p>강낭콩을 모으고 성장시키며 다양한 콩을 모아보세요!</p>
+          </div>
+          <img src="./assets/bean-stage3.gif" alt="" />
+        </header>
+        <div class="content">
+          <section class="collect-stats">
+            <div><small>수집한 콩</small><strong>19 / 28</strong><div class="bar"><span style="width: 67%"></span></div></div>
+            <div><small>일반 콩</small><strong>15 / 20</strong></div>
+            <div><small>스페셜 콩</small><strong>4 / 8</strong></div>
+          </section>
+          <div class="tabs">
+            <button class="active" data-filter="all">전체</button>
+            <button data-filter="normal">일반 콩</button>
+            <button data-filter="special">스페셜 콩</button>
+            <button data-filter="latest">최신순⌄</button>
+          </div>
+          <section class="collection-group" data-group="normal">
+            <h2>🫘 일반 콩 (15/20)</h2>
+            <div class="bean-grid">
+              <article><img src="./assets/bean-stage1.gif" alt="" /><b>기본 콩</b><span>✓</span></article>
+              <article><div class="bean pink"></div><b>벚꽃 콩</b><span>✓</span></article>
+              <article><div class="bean blue"></div><b>하늘 콩</b><span>✓</span></article>
+              <article><div class="bean yellow"></div><b>레몬 콩</b><span>✓</span></article>
+              <article><div class="bean purple"></div><b>밤하늘 콩</b><span>✓</span></article>
+              <article><div class="bean orange"></div><b>호박 콩</b><span>✓</span></article>
+              <article><div class="bean mint"></div><b>민트 콩</b><span>✓</span></article>
+              <article><div class="bean cream"></div><b>모래 콩</b><span>✓</span></article>
+              <article><div class="bean milk"></div><b>우유 콩</b><span>✓</span></article>
+              <article class="locked"><div>🔒</div><b>???</b><span>0/1</span></article>
+            </div>
+          </section>
+          <section class="collection-group" data-group="special">
+            <h2>⭐ 스페셜 콩 (4/8)</h2>
+            <div class="bean-grid special">
+              <article><div class="bean rainbow"></div><b>무지개 콩</b><span>✓</span></article>
+              <article><div class="bean cat"></div><b>냥냥 콩</b><span>✓</span></article>
+              <article><div class="bean space"></div><b>우주 콩</b><span>✓</span></article>
+              <article><div class="bean grape"></div><b>행운 콩</b><span>✓</span></article>
+              <article class="locked"><div>🔒</div><b>???</b><span>0/1</span></article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="하단 메뉴">
+        <a href="./index.html"><span>🌱</span>홈</a>
+        <a href="./missions.html"><span>📋</span>미션</a>
+        <a href="./records.html"><span>📔</span>기록</a>
+        <a class="active" href="./collection.html"><span>🎁</span>컬렉션</a>
+      </nav>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
