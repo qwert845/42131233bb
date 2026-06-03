@@ -13,11 +13,21 @@
           <button class="back" data-nav="home" aria-label="홈으로 이동">‹</button>
           <div>
             <h1>기록</h1>
-            <p>매일의 작은 실천이 강낭콩을 쑥쑥 자라게 해요!</p>
+            <p>자가체크로 남긴 실천 기록과 성장 상태를 확인하세요.</p>
           </div>
           <img src="./assets/bean-stage2.gif" alt="" />
         </header>
         <div class="content">
+          <section class="summary app-summary">
+            <h2>오늘의 성장 요약</h2>
+            <div>
+              <span><b id="recordClearDays">0개</b><em>완료 미션</em></span>
+              <span><b id="recordExp">0</b><em>획득 EXP</em></span>
+              <span><b id="recordLevel">Lv. 1</b><em>현재 레벨</em></span>
+              <span><b id="recordStage">새싹</b><em>성장 단계</em></span>
+            </div>
+          </section>
+
           <section class="calendar">
             <div class="row-between">
               <strong id="monthLabel">2026년 6월</strong>
@@ -27,30 +37,31 @@
               <b>일</b><b>월</b><b>화</b><b>수</b><b>목</b><b>금</b><b>토</b>
             </div>
             <div class="dates" id="calendarDates">
-              <span class="muted">31</span><span>1</span><span>2</span><span>3</span><span class="sprout">4</span><span>5</span><span>6</span>
-              <span class="sprout">7</span><span>8</span><span>9</span><span class="sprout">10</span><span>11</span><span>12</span><span>13</span>
-              <span>14</span><span class="sprout">15</span><span class="today">16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+              <span class="muted">31</span><span>1</span><span>2</span><span class="today">3</span><span>4</span><span>5</span><span>6</span>
+              <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+              <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
               <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
               <span>28</span><span>29</span><span>30</span><span class="muted">1</span><span class="muted">2</span><span class="muted">3</span><span class="muted">4</span>
             </div>
-            <div class="legend"><span>🌱 1개 미션 완료</span><span>🌿 3개 완료</span><span>· 미완료</span></div>
+            <div class="legend"><span>🌱 완료 기록</span><span>🏆 10개 완료</span><span>· 미완료</span></div>
           </section>
+
           <section class="done-list">
             <div class="row-between">
-              <h2>6월 16일 (화)</h2>
-              <strong>완료한 미션 3 / 3</strong>
+              <h2>오늘 완료한 미션</h2>
+              <strong id="doneListCount">0 / 10</strong>
             </div>
-            <article><span>🥤</span><p>텀블러 사용하기</p><b>+30 EXP</b><i>✓</i></article>
-            <article><span>♻</span><p>분리수거 하기</p><b>+30 EXP</b><i>✓</i></article>
-            <article><span>🚿</span><p>샤워 시간 5분 줄이기</p><b>+30 EXP</b><i>✓</i></article>
+            <div id="doneMissionList"></div>
           </section>
-          <section class="summary">
-            <h2>이번 달 기록 요약</h2>
-            <div>
-              <span><b>12일</b><em>미션 완료 일수</em></span>
-              <span><b>36개</b><em>완료한 미션 수</em></span>
-              <span><b>360</b><em>획득한 보상</em></span>
-              <span><b>2단계</b><em>성장한 콩 단계</em></span>
+
+          <section class="photo-album">
+            <div class="row-between">
+              <h2>나의 사진첩!</h2>
+              <strong id="albumCount">0장</strong>
+            </div>
+            <div class="album-empty">
+              <span>📷</span>
+              <p>인증샷 기록은 다음 단계에서 연결 예정</p>
             </div>
           </section>
         </div>
@@ -58,9 +69,9 @@
 
       <nav class="bottom-nav" aria-label="하단 메뉴">
         <a href="./index.html"><span>🌱</span>홈</a>
-        <a href="./missions.html"><span>📋</span>미션</a>
-        <a class="active" href="./records.html"><span>📔</span>기록</a>
-        <a href="./collection.html"><span>🎁</span>컬렉션</a>
+        <a href="./missions.html"><span>🎯</span>미션</a>
+        <a class="active" href="./records.html"><span>📅</span>기록</a>
+        <a href="./collection.html"><span>📚</span>컬렉션</a>
       </nav>
     </main>
     <script src="./script.js"></script>

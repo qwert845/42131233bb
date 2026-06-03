@@ -7,88 +7,69 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="app" aria-label="강낭콩 키우기 홈">
+    <main class="app" aria-label="강낭콩 키우기">
       <section class="screen screen-home active">
         <div class="sky">
           <div class="weather">
-            <strong>☀ 24°C</strong>
-            <span>6월 1일 (월)</span>
-            <span>10:30 AM</span>
+            <strong>맑음 24°C</strong>
+            <span>6월 3일 수요일</span>
+            <span>오후 4:20</span>
           </div>
           <button class="gear" data-nav="settings" aria-label="설정으로 이동">⚙</button>
           <div class="garden" id="gardenDrop">
             <img
-              src="./assets/bean-stage2.gif"
-              alt="강낭콩 캐릭터 2단계"
+              src="./assets/bean-stage1.gif"
+              alt="강낭콩 캐릭터"
               class="hero-bean"
               id="stageBean"
-              data-stage="2"
+              data-stage="1"
               role="button"
               tabindex="0"
             />
-            <div class="soil"></div>
             <div class="water-effect" aria-hidden="true">💧</div>
           </div>
-          <button class="water-can" id="waterCan" aria-label="물뿌리개를 강낭콩 위로 드래그">🚿</button>
+          <button class="water-can" id="waterCan" aria-label="미션 화면으로 이동">🎯</button>
         </div>
 
         <div class="content home-content">
           <section class="level-panel">
             <div>
-              <p class="level">Lv. 7</p>
-              <div class="bar"><span id="homeExp" style="width: 60%"></span></div>
+              <p class="level" id="levelText">Lv. 1</p>
+              <div class="bar"><span id="homeExp" style="width: 0%"></span></div>
             </div>
             <div class="exp">
-              <strong id="expText">420 / 700 EXP</strong>
-              <span id="waterHint">콩을 클릭하면 성장 단계가 바뀝니다</span>
+              <strong id="expText">0 / 100 EXP</strong>
+              <span id="waterHint">오늘의 미션을 체크하면 콩이 성장합니다</span>
             </div>
-            <div class="reward-icon">🌱</div>
+            <div class="reward-icon" id="clearCountBadge">0</div>
           </section>
 
           <section class="mission-panel">
             <header>
-              <h2>🌿 오늘의 미션</h2>
-              <span>리셋까지 13:29:45</span>
+              <h2>오늘의 자가체크</h2>
+              <span id="homeProgressText">0 / 10 완료</span>
             </header>
-            <article class="quest complete">
-              <div class="quest-icon green">🥤</div>
-              <div class="quest-main">
-                <h3>텀블러 사용하기</h3>
-                <div class="bar"><span style="width: 100%"></span></div>
-                <small>1 / 1</small>
+            <div class="home-check-summary">
+              <div>
+                <strong id="homeClearBig">0</strong>
+                <span>완료한 미션</span>
               </div>
-              <div class="coin">⭐<b>+30 EXP</b></div>
-              <button aria-label="완료">✓</button>
-            </article>
-            <article class="quest" id="waterMission">
-              <div class="quest-icon clay">🪴</div>
-              <div class="quest-main">
-                <h3>식물에 물 주기</h3>
-                <div class="bar"><span style="width: 0%"></span></div>
-                <small>0 / 1</small>
+              <div>
+                <strong id="homeRemainBig">10</strong>
+                <span>남은 체크</span>
               </div>
-              <div class="coin">⭐<b>+30 EXP</b></div>
-              <button aria-label="미완료">›</button>
-            </article>
-            <article class="quest">
-              <div class="quest-icon blue">♻</div>
-              <div class="quest-main">
-                <h3>분리수거 하기</h3>
-                <div class="bar"><span style="width: 12%"></span></div>
-                <small>0 / 1</small>
-              </div>
-              <div class="coin">⭐<b>+30 EXP</b></div>
-              <button aria-label="미완료">›</button>
-            </article>
+              <a href="./missions.html">전체 보기</a>
+            </div>
+            <div id="homeMissionList" class="home-mission-list"></div>
           </section>
         </div>
       </section>
 
       <nav class="bottom-nav" aria-label="하단 메뉴">
         <a class="active" href="./index.html"><span>🌱</span>홈</a>
-        <a href="./missions.html"><span>📋</span>미션</a>
-        <a href="./records.html"><span>📔</span>기록</a>
-        <a href="./collection.html"><span>🎁</span>컬렉션</a>
+        <a href="./missions.html"><span>🎯</span>미션</a>
+        <a href="./records.html"><span>📅</span>기록</a>
+        <a href="./collection.html"><span>📚</span>컬렉션</a>
       </nav>
     </main>
     <script src="./script.js"></script>
